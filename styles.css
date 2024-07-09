@@ -1,0 +1,98 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header,
+nav,
+main,
+footer {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.calculator input,
+.calculator button,
+.calculator select {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin: 10px 0;
+}
+
+.toggle {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  text-align: center;
+  width: 48%;
+  transition: background-color 0.3s;
+}
+
+.toggle.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.height-inputs {
+  display: none;
+  flex-direction: row;
+}
+
+.height-inputs.active {
+  display: flex;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #000;
+  color: #fff;
+}
